@@ -15,9 +15,9 @@ def average_colour(image):
     avg_color_per_row = np.average(image_arr, axis=0)
     avg_color = np.average(avg_color_per_row, axis=0)
     
-    return (int(avg_color[0]), int(avg_color[1]), int(avg_color[2]))
+    return (int(avg_color[0]), int(avg_color[1]), int(avg_color[2]))  #calculates the average reg,gree, and blue of the whole image
 
-def weighted_average(hist):
+def weighted_average(hist): # Calculates variance and returns standard deviation
     total = sum(hist)
     error = value = 0
 
